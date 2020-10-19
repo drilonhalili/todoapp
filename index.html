@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <!-- Add your site or application content here -->
+    <div class="container">
+      <div class="row">
+        <div class="col mx-auto col-md-8 mt-3 text-center">
+          <!-- form -->
+          <form id="todos-form" class="my-3">
+            <h3 class="text-capitalize mb-4">My to do list</h3>
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control text-capitalize"
+                id="item-input"
+                placeholder="what do you need to do..."
+              />
+              <div class="input-group-append">
+                <button class="btn btn-primary text-capitalize" type="submit">
+                  add item
+                </button>
+              </div>
+            </div>
+          </form>
+          <div class="item-container">
+            <!-- end of form  -->
+            <div class="item-list my-5">
+              <!-- single item -->
+              <!-- <div class="item my-3">
+                <h5 class="item-name text-capitalize">write my JS homework</h5>
+                <div class="item-icons">
+                  <button class="complete-btn">Complete</button>
+                  <button class="edit-btn">Edit</button>
+                  <button class="delete-btn">Delete</button>
+                </div>
+              </div> -->
+              <!-- end of single item -->
+            </div>
+            <button
+              type="button"
+              class="btn btn-primary my-3 text-capitalize"
+              id="clear-list"
+            >
+              clear items
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "anonymizeIp", true);
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </body>
+</html>
