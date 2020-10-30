@@ -4,8 +4,6 @@ const form = document.querySelector(".search-form");
 
 const buttonAll = document.getElementById("all");
 
-console.log(buttonAll);
-
 filterInput.focus();
 
 function filterName() {
