@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <title></title>
@@ -21,73 +21,209 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
 
     <meta name="theme-color" content="#fafafa" />
   </head>
-
   <body>
-    <!-- Add your site or application content here -->
-    <div class="container">
+    <main class="container">
+      <header>
+        <p class="h1 text-center">My Cake List</p>
+      </header>
+
+      <!--filter buttons -->
       <div class="row">
-        <div class="col mx-auto col-md-8 mt-3 text-center">
-          <!-- form -->
-          <form id="todos-form" class="my-3">
-            <h3 class="text-capitalize mb-4">My to do list</h3>
-            <div class="input-group">
-              <input
-                type="text"
-                class="form-control text-capitalize"
-                id="item-input"
-                placeholder="what do you need to do..."
-              />
-              <div class="input-group-append">
-                <button class="btn btn-primary text-capitalize" type="submit">
-                  add item
-                </button>
-              </div>
-            </div>
-          </form>
-          <div class="item-container">
-            <!-- end of form  -->
-            <div class="item-list my-5">
-              <!-- single item -->
-              <!-- <div class="item my-3">
-                <h5 class="item-name text-capitalize">write my JS homework</h5>
-                <div class="item-icons">
-                  <button class="complete-btn">Complete</button>
-                  <button class="edit-btn">Edit</button>
-                  <button class="delete-btn">Delete</button>
+        <div
+          class="col-lg-8 mx-auto d-flex justify-content-around my-2 sortBtn flex-wrap"
+        >
+          <a
+            href="#"
+            class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
+            data-filter="all"
+            id="all"
+          >
+            all</a
+          >
+          <a
+            href="#"
+            class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
+            data-filter="doughnuts"
+            >doughnuts</a
+          >
+        </div>
+      </div>
+
+      <form class="search-form" autocomplete="off">
+        <div class="form-group">
+          <label for="filterInput">Search a cake:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="filterInput"
+            placeholder="Enter a cake name..."
+          />
+          <small class="form-text text-muted"
+            >Please, select your best cake.</small
+          >
+        </div>
+      </form>
+      <div class="row">
+        <div class="col-lg">
+          <ul class="letter-group">
+            <li class="letter-group__name">
+              <a href="#">
+                <img src="./img/doughnut-1.jpeg" alt="lol" class="img" />
+                <div>
+                  <span class="span">Adam</span>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugiat error, sit, sed iure fuga ullam soluta temporibus
+                    nobis quas provident sunt mollitia hic beatae earum
+                    voluptates optio! Culpa soluta earum sint in omnis
+                    consequatur commodi enim vero quod ex error incidunt,
+                    delectus maxime dolorum esse illo voluptatem nulla neque!
+                    Quas pariatur aperiam laudantium laborum earum, minima magni
+                    cum commodi voluptatum a praesentium cumque quidem omnis hic
+                    officiis nesciunt accusantium modi saepe asperiores quam
+                    rerum quibusdam consequatur. Voluptates officia distinctio
+                    quo omnis debitis repellendus nesciunt officiis neque fuga?
+                    Doloremque debitis earum commodi est esse doloribus sed
+                    atque hic, cum dolores reiciendis.
+                  </p>
                 </div>
-              </div> -->
-              <!-- end of single item -->
-            </div>
-            <button
-              type="button"
-              class="btn btn-primary my-3 text-capitalize"
-              id="clear-list"
-            >
-              clear items
-            </button>
-          </div>
+              </a>
+            </li>
+            <li class="letter-group__name">
+              <a href="#">
+                <img src="./img/doughnut-2.jpeg" alt="lol" class="img" />
+                <div>
+                  <span class="span">Andrew</span>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugiat error, sit, sed iure fuga ullam soluta temporibus
+                    nobis quas provident sunt mollitia hic beatae earum
+                    voluptates optio! Culpa soluta earum sint in omnis
+                    consequatur commodi enim vero quod ex error incidunt,
+                    delectus maxime dolorum esse illo voluptatem nulla neque!
+                    Quas pariatur aperiam laudantium laborum earum, minima magni
+                    cum commodi voluptatum a praesentium cumque quidem omnis hic
+                    officiis nesciunt accusantium modi saepe asperiores quam
+                    rerum quibusdam consequatur. Voluptates officia distinctio
+                    quo omnis debitis repellendus nesciunt officiis neque fuga?
+                    Doloremque debitis earum commodi est esse doloribus sed
+                    atque hic, cum dolores reiciendis.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="letter-group__name">
+              <a href="#">
+                <img src="./img/doughnut-3.jpeg" alt="lol" class="img" />
+                <div>
+                  <span class="span">Alan</span>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugiat error, sit, sed iure fuga ullam soluta temporibus
+                    nobis quas provident sunt mollitia hic beatae earum
+                    voluptates optio! Culpa soluta earum sint in omnis
+                    consequatur commodi enim vero quod ex error incidunt,
+                    delectus maxime dolorum esse illo voluptatem nulla neque!
+                    Quas pariatur aperiam laudantium laborum earum, minima magni
+                    cum commodi voluptatum a praesentium cumque quidem omnis hic
+                    officiis nesciunt accusantium modi saepe asperiores quam
+                    rerum quibusdam consequatur. Voluptates officia distinctio
+                    quo omnis debitis repellendus nesciunt officiis neque fuga?
+                    Doloremque debitis earum commodi est esse doloribus sed
+                    atque hic, cum dolores reiciendis.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="letter-group__name">
+              <a href="#">
+                <img src="./img/doughnut-3.jpeg" alt="lol" class="img" />
+                <div>
+                  <span class="span">Bob</span>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugiat error, sit, sed iure fuga ullam soluta temporibus
+                    nobis quas provident sunt mollitia hic beatae earum
+                    voluptates optio! Culpa soluta earum sint in omnis
+                    consequatur commodi enim vero quod ex error incidunt,
+                    delectus maxime dolorum esse illo voluptatem nulla neque!
+                    Quas pariatur aperiam laudantium laborum earum, minima magni
+                    cum commodi voluptatum a praesentium cumque quidem omnis hic
+                    officiis nesciunt accusantium modi saepe asperiores quam
+                    rerum quibusdam consequatur. Voluptates officia distinctio
+                    quo omnis debitis repellendus nesciunt officiis neque fuga?
+                    Doloremque debitis earum commodi est esse doloribus sed
+                    atque hic, cum dolores reiciendis.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="letter-group__name">
+              <a href="#">
+                <img src="./img/doughnut-3.jpeg" alt="lol" class="img" />
+                <div>
+                  <span class="span">Viktor</span>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugiat error, sit, sed iure fuga ullam soluta temporibus
+                    nobis quas provident sunt mollitia hic beatae earum
+                    voluptates optio! Culpa soluta earum sint in omnis
+                    consequatur commodi enim vero quod ex error incidunt,
+                    delectus maxime dolorum esse illo voluptatem nulla neque!
+                    Quas pariatur aperiam laudantium laborum earum, minima magni
+                    cum commodi voluptatum a praesentium cumque quidem omnis hic
+                    officiis nesciunt accusantium modi saepe asperiores quam
+                    rerum quibusdam consequatur. Voluptates officia distinctio
+                    quo omnis debitis repellendus nesciunt officiis neque fuga?
+                    Doloremque debitis earum commodi est esse doloribus sed
+                    atque hic, cum dolores reiciendis.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="letter-group__name">
+              <a href="#">
+                <img src="./img/doughnut-3.jpeg" alt="lol" class="img" />
+                <div>
+                  <span class="span">Caren</span>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugiat error, sit, sed iure fuga ullam soluta temporibus
+                    nobis quas provident sunt mollitia hic beatae earum
+                    voluptates optio! Culpa soluta earum sint in omnis
+                    consequatur commodi enim vero quod ex error incidunt,
+                    delectus maxime dolorum esse illo voluptatem nulla neque!
+                    Quas pariatur aperiam laudantium laborum earum, minima magni
+                    cum commodi voluptatum a praesentium cumque quidem omnis hic
+                    officiis nesciunt accusantium modi saepe asperiores quam
+                    rerum quibusdam consequatur. Voluptates officia distinctio
+                    quo omnis debitis repellendus nesciunt officiis neque fuga?
+                    Doloremque debitis earum commodi est esse doloribus sed
+                    atque hic, cum dolores reiciendis.
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <!-- modal-container -->
+    <div id="container-fluid" class="container-fluid">
+      <div class="row lightbox-container align-items-center">
+        <div class="col-10 col-md-10 mx-auto text-right lightbox-holder">
+          <span class="lightbox-close">&times;</span>
+          <div class="lightbox-item"></div>
+          <span class="lightbox-control btnLeft"></span>
+          <span class="lightbox-control btnRight"></span>
         </div>
       </div>
     </div>
-    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-    <script>
-      window.ga = function () {
-        ga.q.push(arguments);
-      };
-      ga.q = [];
-      ga.l = +new Date();
-      ga("create", "UA-XXXXX-Y", "auto");
-      ga("set", "anonymizeIp", true);
-      ga("set", "transport", "beacon");
-      ga("send", "pageview");
-    </script>
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
+    <script src="js/main-gallery.js"></script>
   </body>
 </html>

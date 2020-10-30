@@ -1,0 +1,129 @@
+ligthbox .lightbox-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.6) !important;
+  display: none;
+}
+.show {
+  display: block;
+}
+
+.lightbox-holder {
+  position: relative;
+  padding: 0;
+}
+.lightbox-item {
+  min-height: 80vh;
+  background: url("../img/doughnut-1.jpeg") center/cover fixed no-repeat;
+  border-radius: 0.3rem;
+}
+.lightbox-close {
+  color: var(--mainPink);
+  font-size: 3rem;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+.lightbox-close:hover {
+  color: var(--mainYellow);
+}
+
+.lightbox-control {
+  position: absolute;
+  font-size: 4rem;
+  color: var(--mainPink);
+  transition: all 1s linear;
+  cursor: pointer;
+}
+.lightbox-control:hover {
+  color: var(--mainYellow);
+}
+.btnLeft {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  color: white;
+}
+.btnLeft:after {
+  content: "<";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.btnRight {
+  position: absolute;
+  top: 50%;
+  right: calc(5% + 30px);
+  color: white;
+}
+.btnRight:after {
+  content: ">";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+// Contact list
+
+.row {
+  list-style: none;
+}
+
+.letter-group {
+  list-style: none;
+  padding: 0.5rem 0;
+}
+
+.border-bottom:not(:last-child) {
+  border-bottom: 1px solid #888;
+}
+
+.letter-group .letter-group__name {
+  padding-left: 2rem;
+}
+
+.letter-group__name a,
+.letter-group__name a:visited,
+.letter-group__name a:link {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  font-size: 28px;
+  transition: 0.1s ease-in-out;
+  width: 100%;
+}
+
+.letter-group__name a:hover,
+.letter-group__name a:focus {
+  text-decoration: underline;
+}
+
+.img {
+  flex: 2;
+  width: 450px;
+  padding-right: 15px;
+}
+
+span {
+  flex: 1;
+  flex-direction: column;
+}
+
+p {
+  flex: 1;
+  font-size: medium;
+  color: black;
+}
+
+.hide {
+  display: none !important;
+  padding: 0 !important;
+}
